@@ -673,7 +673,7 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Finder" id="RM6-20-A2D">
                         <items>
-                            <menuItem title="Show Hidden Tasks" id="NoR-Ym-6qh">
+                            <menuItem title="Show Hidden Files" id="NoR-Ym-6qh">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="toggleHiddenFiles:" target="Voe-Tx-rLC" id="0Vw-Sm-PUE"/>

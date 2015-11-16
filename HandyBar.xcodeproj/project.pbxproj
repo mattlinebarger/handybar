@@ -13,6 +13,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C03FAB2C1BF155B7006BC0BE /* HandyBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HandyBar.entitlements; sourceTree = "<group>"; };
 		C0C9F8551BE3C69800B334F0 /* HandyBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandyBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C9F8581BE3C69800B334F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0C9F85A1BE3C69800B334F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,6 +51,7 @@
 		C0C9F8571BE3C69800B334F0 /* HandyBar */ = {
 			isa = PBXGroup;
 			children = (
+				C03FAB2C1BF155B7006BC0BE /* HandyBar.entitlements */,
 				C0C9F8581BE3C69800B334F0 /* AppDelegate.swift */,
 				C0C9F85A1BE3C69800B334F0 /* Assets.xcassets */,
 				C0C9F85C1BE3C69800B334F0 /* MainMenu.xib */,
@@ -90,6 +92,12 @@
 				TargetAttributes = {
 					C0C9F8541BE3C69800B334F0 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = S5LBTC36NQ;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -230,11 +238,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HandyBar/HandyBar.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = HandyBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.squabash.HandyBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -242,11 +255,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HandyBar/HandyBar.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = HandyBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.squabash.HandyBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
